@@ -6,16 +6,20 @@ namespace Orders.Entities {
     class Order {
         public DateTime Moment { get; set; }
         public OrderStatus Status { get; set; }
+        public Clients Client { get; set; }
+
         public List<OrderItem> Itens { get; set; } = new List<OrderItem>();
 
         public Order() { 
         
         }
 
-        public Order(DateTime moment, OrderStatus status) {
+        public Order(DateTime moment, OrderStatus status, Clients client) {
             Moment = moment;
             Status = status;
+            Client = client;
         }
+
 
         public void AddItem(OrderItem item) {
             Itens.Add(item);
