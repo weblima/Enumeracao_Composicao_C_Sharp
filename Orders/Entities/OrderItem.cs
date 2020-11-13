@@ -19,5 +19,7 @@ namespace Orders.Entities {
 
             return Quantity * Price;
         }
+
+       
     }
 }

@@ -41,7 +41,8 @@ namespace Orders {
                 order.AddItem(orderItem);
             }
 
-
+            Console.WriteLine("");
+            Console.WriteLine(order);
 
         }
     }
